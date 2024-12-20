@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57cb045a-3031-4f25-ba2f-8a665b6f4314" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/isima/codereview/tp1/AwesomePasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/isima/codereview/tp1/AwesomePasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cluster_centers_HAC_aff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cluster_centers_HAC_aff.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/isima/codereview/tp1/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/isima/codereview/tp1/AwesomePasswordCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/isima/codereview/tp1/AwesomePasswordCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cluster_centers_HAC_aff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cluster_centers_HAC_aff.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2qTboS1h4oa07y36d0XzBzeqqxo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AwesomePasswordCheckerTest.executor": "Run",
+    "JUnit.AwesomePasswordCheckerTest.testGetInstance.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lmx/github/codeReview-TP1"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AwesomePasswordCheckerTest">
+    <configuration name="AwesomePasswordCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.isima.codereview.tp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.isima.codereview.tp1" />
+      <option name="MAIN_CLASS_NAME" value="fr.isima.codereview.tp1.AwesomePasswordCheckerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AwesomePasswordCheckerTest.testGetInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.isima.codereview.tp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.isima.codereview.tp1" />
+      <option name="MAIN_CLASS_NAME" value="fr.isima.codereview.tp1.AwesomePasswordCheckerTest" />
+      <option name="METHOD_NAME" value="testGetInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AwesomePasswordCheckerTest.testMaskAff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.isima.codereview.tp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.isima.codereview.tp1" />
+      <option name="MAIN_CLASS_NAME" value="fr.isima.codereview.tp1.AwesomePasswordCheckerTest" />
+      <option name="METHOD_NAME" value="testMaskAff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="codeReview-TP1" />
       <method v="2">
@@ -15,5 +106,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AwesomePasswordCheckerTest" />
+        <item itemvalue="JUnit.AwesomePasswordCheckerTest.testMaskAff" />
+        <item itemvalue="JUnit.AwesomePasswordCheckerTest.testGetInstance" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57cb045a-3031-4f25-ba2f-8a665b6f4314" name="Changes" comment="" />
+      <created>1734689687223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734689687223</updated>
+    </task>
+    <servers />
   </component>
 </project>

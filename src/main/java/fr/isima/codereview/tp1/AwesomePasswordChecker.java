@@ -10,7 +10,6 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,7 +46,7 @@ public class AwesomePasswordChecker {
     return instance;
   }
       
-  private AwesomePasswordChecker(InputStream is) throws IOException {
+  public AwesomePasswordChecker(InputStream is) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(is));
     String line;
     while ((line = br.readLine()) != null) {
@@ -55,6 +54,7 @@ public class AwesomePasswordChecker {
       double[] center = new double[values.length];
       
       for (int i = 0; i < values.length; ++i) {
+        // System.out.println("Content " + i + " " + values[i]);
         center[i] = Double.parseDouble(values[i]);
       }
       clusterCenters.add(center);
@@ -130,7 +130,7 @@ public class AwesomePasswordChecker {
   * @param password the password for which the distance will be calculated
   * @return the distance of the password given as an input
   */
-  public double getDIstance(String password) {
+  public double getDistance(String password) {
     int[] maskArray = maskAff(password);
     double minDistance = Double.MAX_VALUE;
     for (double[] center : clusterCenters) {
@@ -142,7 +142,7 @@ public class AwesomePasswordChecker {
   private double euclideanDistance(int[] terme1, double[] terme2) {
     double sum = 0;
     for (int i = 0; i < terme1.length; i++) {
-      sum += (terme1[i] - terme2[i]) * (terme1[i] + terme2[i]);
+      sum += (terme1[i] - terme2[i]) * (terme1[i] - terme2[i]);
     }
     return Math.sqrt(sum);
   }
