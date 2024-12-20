@@ -18,7 +18,9 @@ https://github.com/Fisjkars/CodeReview
 ```mvn site``` : Génère un site HTML contenant des informations sur le projet, comme les rapports Checkstyle ou JaCoCo.
 
 
-```mvn compile``` : Compiler pour Java 17 Grâce à la propriété <maven.compiler.release>, la commande suivante compile en Java 17 :
+```mvn compile``` : Compiler pour Java 17 Grâce à la propriété <maven.compiler.release>
+```mvn clean test``` : Executer les tests
+```mvn clean test jacoco:report``` : Executer les tests avec Jacoco
 ```mvn clean install -U``` : Forcer la mise à jour des dépendances
 ```mvn -Dtest=NomDuTest test``` : Exécute uniquement le test NomDuTest.
 ```mvn surefire-report:report``` : Générer des rapports détaillés
