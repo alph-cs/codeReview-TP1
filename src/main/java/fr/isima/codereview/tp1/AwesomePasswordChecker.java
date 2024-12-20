@@ -8,8 +8,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -224,7 +222,7 @@ public class AwesomePasswordChecker {
           fvect = cvect ^ (bvect | ~dvect);
           gvect = (7 * j) % 16;
         }
-        int temp = dvect;
+        final int temp = dvect;
         dvect = cvect;
         cvect = bvect;
         bvect = bvect + Integer.rotateLeft(avect + fvect + kinit[j] + wtab[gvect], rinit[j]);

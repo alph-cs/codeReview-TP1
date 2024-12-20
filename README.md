@@ -11,6 +11,18 @@ This means transforming it from a basic, functional prototype into a polished, m
 piece of software.
 https://github.com/Fisjkars/CodeReview
 
+# Command that may e usefull
+```mvn jacoco:report``` : Génère un rapport de couverture de code basé sur les tests.
+```mvn jacoco:prepare-agent``` : Ajoute l'agent JaCoCo à l'exécution des tests.
+```mvn checkstyle:check``` : Vérification avec Checkstyle
+```mvn site``` : Génère un site HTML contenant des informations sur le projet, comme les rapports Checkstyle ou JaCoCo.
+
+
+```mvn compile``` : Compiler pour Java 17 Grâce à la propriété <maven.compiler.release>, la commande suivante compile en Java 17 :
+```mvn clean install -U``` : Forcer la mise à jour des dépendances
+```mvn -Dtest=NomDuTest test``` : Exécute uniquement le test NomDuTest.
+```mvn surefire-report:report``` : Générer des rapports détaillés
+
 # Deliverables expected
 A Github repository containing the intern code with the following elements:
 - Maven/Gradle/Ant project
