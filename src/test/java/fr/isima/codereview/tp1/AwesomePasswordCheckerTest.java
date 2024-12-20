@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.util.stream.IntStream;
 
 public class AwesomePasswordCheckerTest {
 
@@ -112,5 +113,30 @@ public class AwesomePasswordCheckerTest {
         // Vérifier que c'est toujours la même instance
         AwesomePasswordChecker instance2 = AwesomePasswordChecker.getInstance(tempFile);
         assertSame(instance1, instance2);
+    }
+
+    @Test
+    public void testComputeMD5Performance() {
+        // Générer des entrées de différentes tailles
+        int[] inputSizes = {10, 100, 1000, 10_000, 100_000};
+
+        for (int size : inputSizes) {
+            // Créer une chaîne de la taille donnée
+            StringBuilder inputBuilder = new StringBuilder(size);
+            IntStream.range(0, size).forEach(i -> inputBuilder.append((char) ('a' + (i % 26))));
+            String input = inputBuilder.toString();
+
+            // Mesurer le temps de calcul du hash MD5
+            long startTime = System.nanoTime();
+            String md5Hash = AwesomePasswordChecker.computeMD5(input);
+            long endTime = System.nanoTime();
+
+            // Vérifier que le hash n'est pas nul
+            assertNotNull(md5Hash, "MD5 hash ne doit pas être null pour une entrée de taille " + size);
+
+            // Afficher le temps d'exécution
+            long duration = (endTime - startTime) / 1_000_000; // Convertir en millisecondes
+            System.out.println("Temps pour une entrée de taille " + size + ": " + duration + " ms");
+        }
     }
 }

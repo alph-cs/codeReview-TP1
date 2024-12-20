@@ -22,7 +22,7 @@ https://github.com/Fisjkars/CodeReview
 ```mvn clean test``` : Executer les tests
 ```mvn clean test jacoco:report``` : Executer les tests avec Jacoco
 ```mvn clean install -U``` : Forcer la mise à jour des dépendances
-```mvn -Dtest=NomDuTest test``` : Exécute uniquement le test NomDuTest.
+```mvn -Dtest=NomDuTest test``` : Exécute uniquement un certain test .
 ```mvn surefire-report:report``` : Générer des rapports détaillés
 
 # Deliverables expected
@@ -39,15 +39,15 @@ A Github repository containing the intern code with the following elements:
     - Security.md. (Done)
     - Issues Templates. (Done)
     - Pull request template. (Done)
-    - Protected Branches policies. (Main : Only owner, Develop : Maintener + dev)
-    - Define pull request policy (approval is paid on gitlab)
+    - Protected Branches policies. (Done. Linear history for main branch)
+    - Define pull request policy. (Done. Need at least one other approval)
 - Tests:
-    - Units Tests implementation with proper test plan.
-    - Jacoco report in target/site/jacoco/ after mvn jacoco:report
-    - “Performance test” on “ComputeMD5” method
+    - Units Tests implementation with proper test plan. (Done)
+    - Jacoco report (Done)
+    - “Performance test” on “ComputeMD5” method (Done. Output in mvn test)
 - CI/CD:
     - Foreach pull requests:
-        - Checkstyle
+        - Checkstyle (None. Need to set up a server to listen json payload from webhook)
         - Unit Tests passed.
         - Cobertura reach 90%.
         ZZ2 F2&F5 202
